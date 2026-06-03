@@ -1,0 +1,37 @@
+name: Hot Daily Report
+
+on:
+  schedule:
+    # GitHub Actions uses UTC. 00:00 UTC is 08:00 in Asia/Shanghai.
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Generate report
+        shell: pwsh
+        run: |
+          .\hot-daily\generate-report.ps1
+
+      - name: Commit generated report
+        shell: pwsh
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add hot-daily/dist hot-daily/data
+          git diff --cached --quiet
+          if ($LASTEXITCODE -eq 0) {
+            Write-Host "No report changes to commit."
+          } else {
+            git commit -m "Generate daily hot report"
+            git push
+          }
