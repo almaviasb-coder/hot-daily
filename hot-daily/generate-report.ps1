@@ -434,6 +434,45 @@ function Save-ArticlePage {
     return "articles/$fileName"
 }
 
+function Get-InlineArticleHtml {
+    param(
+        [int]$Rank,
+        [object]$Group
+    )
+
+    $paragraphs = @($Group.items |
+        Where-Object { -not [string]::IsNullOrWhiteSpace($_.content) } |
+        Select-Object -ExpandProperty content -Unique)
+    if ($paragraphs.Count -eq 0) {
+        $paragraphs = @(
+            "该热点来源未在公开热榜接口中提供完整正文。当前日报按统一格式展示标题、配图和来源，完整报道请点击下方来源链接查看。",
+            "为了避免复制平台全文或抓取受限内容，本页只保存公开可获取的热榜信息。"
+        )
+    }
+
+    $bodyHtml = ($paragraphs | ForEach-Object {
+        "<p>$(HtmlEncode $_)</p>"
+    }) -join "`n"
+    $sourceLinks = ($Group.items | ForEach-Object {
+        "<a href='$(HtmlEncode $_.url)' target='_blank' rel='noopener'>来源：$(HtmlEncode $_.source)</a>"
+    }) -join ""
+
+    $toggleId = "toggle-hot-$("{0:D2}" -f $Rank)"
+    return @"
+<div class="article-detail">
+  <div class="article-panel">
+    <label class="article-close" for="$toggleId">收起正文</label>
+    <div class="article-label">统一正文</div>
+    <h3>$(HtmlEncode $Group.title)</h3>
+    <div class="article-body">
+      $bodyHtml
+    </div>
+    <div class="article-sources">$sourceLinks</div>
+  </div>
+</div>
+"@
+}
+
 function Get-ImageQueries {
     param([string]$Title)
 
@@ -546,12 +585,13 @@ function Render-Report {
                 if ($localImage) { break }
             }
         }
-        $articleUrl = Save-ArticlePage $rank $group $localImage
+        $toggleId = "toggle-hot-$("{0:D2}" -f $rank)"
+        $articleHtml = Get-InlineArticleHtml $rank $group
         $thumbSrc = if ($localImage) { Convert-ImageToDataUri $localImage } else { "" }
         $thumbHtml = if ($localImage) {
-            "<a class='thumb' href='$(HtmlEncode $articleUrl)'><img src='$(HtmlEncode $thumbSrc)' alt=''></a>"
+            "<label class='thumb' for='$(HtmlEncode $toggleId)'><img src='$(HtmlEncode $thumbSrc)' alt=''></label>"
         } else {
-            "<a class='thumb thumb-fallback' href='$(HtmlEncode $articleUrl)'><span>热点</span></a>"
+            "<label class='thumb thumb-fallback' for='$(HtmlEncode $toggleId)'><span>热点</span></label>"
         }
         $sourceLine = ($group.items | ForEach-Object {
             "<a href='$(HtmlEncode $_.url)' target='_blank' rel='noopener'>来源：$(HtmlEncode $_.source)</a>"
@@ -560,14 +600,16 @@ function Render-Report {
         $chips = ($group.sources | ForEach-Object { "<span class='chip'>$(HtmlEncode $_)</span>" }) -join ""
         [void]$rows.AppendLine(@"
 <article class="hot-item">
+  <input class="article-toggle" id="$(HtmlEncode $toggleId)" type="checkbox">
   <div class="rank">$("{0:D2}" -f $rank)</div>
   $thumbHtml
   <div class="hot-body">
-    <h2><a class="title-link" href="$(HtmlEncode $articleUrl)">$(HtmlEncode $group.title)</a></h2>
+    <h2><label class="title-link" for="$(HtmlEncode $toggleId)">$(HtmlEncode $group.title)</label></h2>
     <div class="chips">$chips</div>
     <div class="meta">最高排名 #$($group.best_rank) · 覆盖 $($group.sources.Count) 个平台 · 采集 $($capturedAt.ToString("HH:mm"))</div>
     <div class="links">$sourceLine</div>
   </div>
+  $articleHtml
 </article>
 "@)
         $rank++
@@ -698,6 +740,11 @@ function Render-Report {
       border-top: 1px solid var(--line);
     }
     .hot-item:first-child { border-top: 0; }
+    .article-toggle {
+      position: absolute;
+      opacity: 0;
+      pointer-events: none;
+    }
     .rank {
       color: var(--rank);
       font-size: 24px;
@@ -713,6 +760,7 @@ function Render-Report {
       overflow: hidden;
       background: #eef2f7;
       border: 1px solid var(--line);
+      cursor: pointer;
     }
     .thumb img {
       display: block;
@@ -754,14 +802,62 @@ function Render-Report {
       margin-top: 8px;
       font-size: 13px;
     }
+    .article-detail {
+      display: none;
+      grid-column: 2 / 4;
+      margin-top: 4px;
+    }
+    .article-toggle:checked ~ .article-detail {
+      display: block;
+    }
+    .article-panel {
+      border-top: 1px solid var(--line);
+      padding-top: 16px;
+      margin-top: 4px;
+    }
+    .article-label {
+      color: var(--accent);
+      font-size: 12px;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+    .article-panel h3 {
+      margin: 0 0 10px;
+      font-size: 18px;
+      line-height: 1.45;
+      letter-spacing: 0;
+    }
+    .article-body {
+      color: #303642;
+      font-size: 15px;
+      line-height: 1.75;
+    }
+    .article-body p {
+      margin: 0 0 12px;
+    }
+    .article-sources {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 14px;
+      margin-top: 12px;
+      font-size: 13px;
+    }
+    .article-close {
+      float: right;
+      color: var(--muted);
+      font-size: 13px;
+      cursor: pointer;
+    }
     a {
       color: var(--accent);
       text-decoration: none;
     }
     a:hover { text-decoration: underline; }
     .title-link {
+      display: inline;
       color: var(--text);
       text-decoration: none;
+      cursor: pointer;
     }
     .title-link:hover {
       color: var(--accent);
@@ -802,11 +898,14 @@ function Render-Report {
       .hot-body {
         grid-column: 2;
       }
+      .article-detail {
+        grid-column: 2;
+      }
     }
   </style>
 </head>
 <body>
-  <main class="page">
+  <main id="top" class="page">
     <header>
       <div class="date">$($capturedAt.ToString("yyyy 年 MM 月 dd 日"))</div>
       <h1>每日热榜日报</h1>
@@ -891,6 +990,8 @@ $html | Set-Content -LiteralPath $indexPath -Encoding UTF8
 Write-Host ""
 Write-Host "生成完成：$dailyPath"
 Write-Host "最新入口：$indexPath"
+
+
 
 
 
