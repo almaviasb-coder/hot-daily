@@ -1,0 +1,279 @@
+[
+  {
+    "title": "重阳节",
+    "sources": [
+      "今日头条",
+      "微博"
+    ],
+    "best_rank": 1,
+    "score": 2823,
+    "items": [
+      {
+        "source": "今日头条",
+        "title": "重阳节",
+        "url": "https://www.toutiao.com/trending/7696901855796822059/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%228%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227696901855796822059%22%2C%22hot_board_impr_id%22%3A%22202610181102485BA34A34175969DE42D6%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E9%87%8D%E9%98%B3%E8%8A%82%22%7D&rank=&style_id=40132&topic_id=7696901855796822059",
+        "rank": 1,
+        "heat": "11848365",
+        "image_url": "https://p3-sign.toutiaoimg.com/tos-cn-i-qvj2lq49k0/3a91fd22548346eb9335eec667db52c7~tplv-tt-shrink:960:540.jpeg?_iz=30575&from=sign_default&lk3s=8d617dac&x-expires=1794873600&x-signature=2JbYhtEqJUSzZq7il%2B%2B9tdX9hwI%3D",
+        "content": "热门事件",
+        "captured_at": "2026-10-18 03:02:44"
+      },
+      {
+        "source": "微博",
+        "title": "重阳节",
+        "url": "https://s.weibo.com/weibo?q=%E9%87%8D%E9%98%B3%E8%8A%82",
+        "rank": 20,
+        "heat": "222931",
+        "image_url": "",
+        "content": "",
+        "captured_at": "2026-10-18 03:02:44"
+      }
+    ]
+  },
+  {
+    "title": "本周我国硬核成果密集上新",
+    "sources": [
+      "百度",
+      "今日头条"
+    ],
+    "best_rank": 3,
+    "score": 2819,
+    "items": [
+      {
+        "source": "今日头条",
+        "title": "本周我国硬核成果密集上新",
+        "url": "https://www.toutiao.com/article/7697760325911593481",
+        "rank": 3,
+        "heat": "9700621",
+        "image_url": "https://p3-sign.toutiaoimg.com/tos-cn-i-qvj2lq49k0/29dc90ac49f044c1a646ffea0a13e06a~tplv-tt-shrink:960:540.jpeg?_iz=30575&from=sign_default&lk3s=8d617dac&x-expires=1794873600&x-signature=dmcMQ3yyn4M4Sk7pdv2owDm9n98%3D",
+        "content": "新事件上榜",
+        "captured_at": "2026-10-18 03:02:44"
+      },
+      {
+        "source": "百度",
+        "title": "本周我国硬核成果密集上新",
+        "url": "https://www.baidu.com/s?wd=%E6%9C%AC%E5%91%A8%E6%88%91%E5%9B%BD%E7%A1%AC%E6%A0%B8%E6%88%90%E6%9E%9C%E5%AF%86%E9%9B%86%E4%B8%8A%E6%96%B0&sa=fyb_news&rsv_dl=fyb_news",
+        "rank": 4,
+        "heat": "7619450",
+        "image_url": "https://fyb-2.cdn.bcebos.com/hotboard_image/3189d5541fafd814181c8e9884961889",
+        "content": "本周，我国在航天、能源、交通等领域捷报频传，从空间探索到工程建设，硬核成果持续“上新”！",
+        "captured_at": "2026-10-18 03:02:44"
+      }
+    ]
+  },
+  {
+    "title": "越来越多人不接陌生电话",
+    "sources": [
+      "百度",
+      "微博"
+    ],
+    "best_rank": 2,
+    "score": 2816,
+    "items": [
+      {
+        "source": "微博",
+        "title": "越来越多人不接陌生电话",
+        "url": "https://s.weibo.com/weibo?q=%E8%B6%8A%E6%9D%A5%E8%B6%8A%E5%A4%9A%E4%BA%BA%E4%B8%8D%E6%8E%A5%E9%99%8C%E7%94%9F%E7%94%B5%E8%AF%9D",
+        "rank": 2,
+        "heat": "919349",
+        "image_url": "",
+        "content": "",
+        "captured_at": "2026-10-18 03:02:44"
+      },
+      {
+        "source": "百度",
+        "title": "越来越多人不接陌生电话",
+        "url": "https://www.baidu.com/s?wd=%E8%B6%8A%E6%9D%A5%E8%B6%8A%E5%A4%9A%E4%BA%BA%E4%B8%8D%E6%8E%A5%E9%99%8C%E7%94%9F%E7%94%B5%E8%AF%9D&sa=fyb_news&rsv_dl=fyb_news",
+        "rank": 45,
+        "heat": "3707947",
+        "image_url": "https://fyb-1.cdn.bcebos.com/fyb/de6163834f53ca92c1273fff98ac9078.jpeg",
+        "content": "",
+        "captured_at": "2026-10-18 03:02:44"
+      }
+    ]
+  },
+  {
+    "title": "“赤马重阳”60年一遇？专家解读",
+    "sources": [
+      "百度",
+      "今日头条"
+    ],
+    "best_rank": 8,
+    "score": 2759,
+    "items": [
+      {
+        "source": "百度",
+        "title": "“赤马重阳”60年一遇？专家解读",
+        "url": "https://www.baidu.com/s?wd=%E2%80%9C%E8%B5%A4%E9%A9%AC%E9%87%8D%E9%98%B3%E2%80%9D60%E5%B9%B4%E4%B8%80%E9%81%87%EF%BC%9F%E4%B8%93%E5%AE%B6%E8%A7%A3%E8%AF%BB&sa=fyb_news&rsv_dl=fyb_news",
+        "rank": 8,
+        "heat": "7238210",
+        "image_url": "https://fyb-2.cdn.bcebos.com/hotboard_image/4b2ff8ed2a192e983028b3b5fcb707f0",
+        "content": "今年恰逢干支纪年中60年一轮回的丙午年，民间俗称“赤马年”，而今年的重阳节，则被称为“赤马重阳”。实际上，所谓“赤马”，并不是指什么特殊的天象，而是对丙午年的传统称谓，源于中国传统干支纪年法。",
+        "captured_at": "2026-10-18 03:02:44"
+      },
+      {
+        "source": "今日头条",
+        "title": "“赤马重阳”60年一遇？专家解读",
+        "url": "https://www.toutiao.com/trending/7696699742428463142/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%224%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227696699742428463142%22%2C%22hot_board_impr_id%22%3A%22202610181102485BA34A34175969DE42D6%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E2%80%9C%E8%B5%A4%E9%A9%AC%E9%87%8D%E9%98%B3%E2%80%9D60%E5%B9%B4%E4%B8%80%E9%81%87%EF%BC%9F%E4%B8%93%E5%AE%B6%E8%A7%A3%E8%AF%BB%22%7D&rank=&style_id=40132&topic_id=7696699742428463142",
+        "rank": 15,
+        "heat": "2921770",
+        "image_url": "https://p3-sign.toutiaoimg.com/tos-cn-i-qvj2lq49k0/8062a14b401d48deb31aa8c6efa02d2b~tplv-tt-shrink:960:540.jpeg?_iz=30575&from=sign_default&lk3s=8d617dac&x-expires=1794873600&x-signature=b3HFbthenhZWt2BTJbKIXHC9lv8%3D",
+        "content": "",
+        "captured_at": "2026-10-18 03:02:44"
+      }
+    ]
+  },
+  {
+    "title": "“2700元搞死一家店铺”",
+    "sources": [
+      "百度",
+      "微博"
+    ],
+    "best_rank": 7,
+    "score": 2756,
+    "items": [
+      {
+        "source": "百度",
+        "title": "“2700元搞死一家店铺”",
+        "url": "https://www.baidu.com/s?wd=%E2%80%9C2700%E5%85%83%E6%90%9E%E6%AD%BB%E4%B8%80%E5%AE%B6%E5%BA%97%E9%93%BA%E2%80%9D&sa=fyb_news&rsv_dl=fyb_news",
+        "rank": 7,
+        "heat": "7329165",
+        "image_url": "https://fyb-2.cdn.bcebos.com/hotboard_image/db3854d38810b94c647616957dc2687a",
+        "content": "“450元让销量下滑，1890元让排名垫底，2700元终极重启套餐，让店铺数据直接作废。”提供“职业差评”服务的“商家”推出了所谓“套餐服务”，叫嚣“花钱就可以搞死一家店铺”，这是公然践踏公平竞争的不法行为，是可忍，孰不可忍？",
+        "captured_at": "2026-10-18 03:02:44"
+      },
+      {
+        "source": "微博",
+        "title": "2700元搞死一家店铺",
+        "url": "https://s.weibo.com/weibo?q=2700%E5%85%83%E6%90%9E%E6%AD%BB%E4%B8%80%E5%AE%B6%E5%BA%97%E9%93%BA",
+        "rank": 39,
+        "heat": "179582",
+        "image_url": "",
+        "content": "",
+        "captured_at": "2026-10-18 03:02:44"
+      }
+    ]
+  },
+  {
+    "title": "吴越发声AI诈骗太恶劣",
+    "sources": [
+      "今日头条",
+      "微博"
+    ],
+    "best_rank": 12,
+    "score": 2691,
+    "items": [
+      {
+        "source": "今日头条",
+        "title": "吴越发声AI诈骗太恶劣",
+        "url": "https://www.toutiao.com/trending/7697786875419328575/?category_name=topic_innerflow&event_type=hot_board&log_pb=%7B%22category_name%22%3A%22topic_innerflow%22%2C%22cluster_type%22%3A%228%22%2C%22enter_from%22%3A%22click_category%22%2C%22entrance_hotspot%22%3A%22outside%22%2C%22event_type%22%3A%22hot_board%22%2C%22hot_board_cluster_id%22%3A%227697786875419328575%22%2C%22hot_board_impr_id%22%3A%22202610181102485BA34A34175969DE42D6%22%2C%22jump_page%22%3A%22hot_board_page%22%2C%22location%22%3A%22news_hot_card%22%2C%22page_location%22%3A%22hot_board_page%22%2C%22source%22%3A%22trending_tab%22%2C%22style_id%22%3A%2240132%22%2C%22title%22%3A%22%E5%90%B4%E8%B6%8A%E5%8F%91%E5%A3%B0AI%E8%AF%88%E9%AA%97%E5%A4%AA%E6%81%B6%E5%8A%A3%22%7D&rank=&style_id=40132&topic_id=7697786875419328575",
+        "rank": 12,
+        "heat": "3943978",
+        "image_url": "https://p3-sign.toutiaoimg.com/tos-cn-i-qvj2lq49k0/ef825d63cc754db89916cea6779c1b49~tplv-tt-shrink:960:540.jpeg?_iz=30575&from=sign_default&lk3s=8d617dac&x-expires=1794873600&x-signature=hOalL5JN%2FjX0fuPCrtfBVu%2BOS9Q%3D",
+        "content": "",
+        "captured_at": "2026-10-18 03:02:44"
+      },
+      {
+        "source": "微博",
+        "title": "吴越发声AI诈骗太恶劣",
+        "url": "https://s.weibo.com/weibo?q=%E5%90%B4%E8%B6%8A%E5%8F%91%E5%A3%B0AI%E8%AF%88%E9%AA%97%E5%A4%AA%E6%81%B6%E5%8A%A3",
+        "rank": 18,
+        "heat": "231984",
+        "image_url": "",
+        "content": "",
+        "captured_at": "2026-10-18 03:02:44"
+      }
+    ]
+  },
+  {
+    "title": "丹麦男子卖中国包子日赚超5万元",
+    "sources": [
+      "百度",
+      "微博"
+    ],
+    "best_rank": 40,
+    "score": 2360,
+    "items": [
+      {
+        "source": "微博",
+        "title": "丹麦男子卖中国包子日赚超5万元",
+        "url": "https://s.weibo.com/weibo?q=%E4%B8%B9%E9%BA%A6%E7%94%B7%E5%AD%90%E5%8D%96%E4%B8%AD%E5%9B%BD%E5%8C%85%E5%AD%90%E6%97%A5%E8%B5%9A%E8%B6%855%E4%B8%87%E5%85%83",
+        "rank": 40,
+        "heat": "170100",
+        "image_url": "",
+        "content": "",
+        "captured_at": "2026-10-18 03:02:44"
+      },
+      {
+        "source": "百度",
+        "title": "丹麦男子卖中国包子日赚超5万元",
+        "url": "https://www.baidu.com/s?wd=%E4%B8%B9%E9%BA%A6%E7%94%B7%E5%AD%90%E5%8D%96%E4%B8%AD%E5%9B%BD%E5%8C%85%E5%AD%90%E6%97%A5%E8%B5%9A%E8%B6%855%E4%B8%87%E5%85%83&sa=fyb_news&rsv_dl=fyb_news",
+        "rank": 43,
+        "heat": "3888657",
+        "image_url": "https://fyb-2.cdn.bcebos.com/hotboard_image/ca030b67b9c9e6d80804598a95fe6983",
+        "content": "近日，丹麦博主PeterQQVlog在文化节上卖中国包子，吸引老外排百米长龙抢购，日赚超5万人民币。传授手艺的中国丈母娘得知后激动流泪，感叹做梦都没想到手艺能在国外火起来，为中国菜走向世界感到自豪。",
+        "captured_at": "2026-10-18 03:02:44"
+      }
+    ]
+  },
+  {
+    "title": "韩国财长：半导体市场景气至少维持至明年",
+    "sources": [
+      "36氪"
+    ],
+    "best_rank": 1,
+    "score": 1788,
+    "items": [
+      {
+        "source": "36氪",
+        "title": "韩国财长：半导体市场景气至少维持至明年",
+        "url": "https://www.36kr.com/newsflashes/4030757440361091",
+        "rank": 1,
+        "heat": "",
+        "image_url": "",
+        "content": "韩国财政部长李炯日周六表示，半导体行业繁荣将至少延续至 2027 年。李炯日在曼谷出席国际货币基金组织与世界银行年会间隙接受采访时称：“目前，我们判断这一轮增长至少可以维持到明年。原因在于半导体供需缺口依旧巨大，供给端还在持续扩张。”李炯日称，芯片股今年放大了韩国股市波动。他表示，半导体产业在本国经济中的占比高于其他国家，由此造成市场剧烈震荡。但他强调，尽管市场起伏，韩国经济基本面依旧稳健。（新浪财经）",
+        "captured_at": "2026-10-18 03:02:44"
+      }
+    ]
+  },
+  {
+    "title": "总书记心系万里绿色长城",
+    "sources": [
+      "百度"
+    ],
+    "best_rank": 1,
+    "score": 1778,
+    "items": [
+      {
+        "source": "百度",
+        "title": "总书记心系万里绿色长城",
+        "url": "https://www.baidu.com/s?wd=%E6%80%BB%E4%B9%A6%E8%AE%B0%E5%BF%83%E7%B3%BB%E4%B8%87%E9%87%8C%E7%BB%BF%E8%89%B2%E9%95%BF%E5%9F%8E&sa=fyb_news&rsv_dl=fyb_news",
+        "rank": 1,
+        "heat": "7904651",
+        "image_url": "https://fyb-2.cdn.bcebos.com/hotboard_image/7449fedfed34e2a6165bd9604e9389d5",
+        "content": "10月16日，习近平总书记在内蒙古自治区乌兰察布市考察时强调，要统筹高质量发展和高水平保护，坚定不移走生态优先、绿色发展之路。建成我国北方重要生态安全屏障，构筑万里绿色长城，习近平总书记念兹在兹。在习近平生态文明思想的科学指引下，一幅幅壮美的生态画卷，正在北疆铺展开来。",
+        "captured_at": "2026-10-18 03:02:44"
+      }
+    ]
+  },
+  {
+    "title": "今年多次回购股曝光，五大共性凸显",
+    "sources": [
+      "36氪"
+    ],
+    "best_rank": 2,
+    "score": 1776,
+    "items": [
+      {
+        "source": "36氪",
+        "title": "今年多次回购股曝光，五大共性凸显",
+        "url": "https://www.36kr.com/newsflashes/4030755775730311",
+        "rank": 2,
+        "heat": "",
+        "image_url": "",
+        "content": "据数据宝统计，截至10月15日，A股市场有33家公司回购次数在两次以上（含已完成回购、实施中的回购和拟回购）。其中，软通动力、三环集团、乐鑫科技等公司均实施回购3次；中国石化、华勤技术、温氏股份、东阳光、东鹏饮料、佰维存储、兴森科技等均有两次回购实施完毕。从回购实施情况来看，乐鑫科技的3次回购均已完成，软通动力、三环集团等年内3次回购均已完成其中的两次；华勤技术、兴森科技、惠泰医疗、渤海租赁、紫金龙净、步长制药等年内计划实施两次的回购公司均已全部实施完毕。梳理发现，今年多次实施回购的个股具备现金流充裕、盈利能力强、估值较低、注销式回购为主、机构关注度较高等五大共性。（证券时报）",
+        "captured_at": "2026-10-18 03:02:44"
+      }
+    ]
+  }
+]
